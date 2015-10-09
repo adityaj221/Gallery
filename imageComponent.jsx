@@ -3,7 +3,7 @@ var ImageComponent = React.createClass({
 		var item = this.props.item;
 		return(
 			<div className="imageComponent">
-				<SpriteImageComponent url={item.sprite_url} />
+				<SpriteImageComponent url={item.cover.large} />
 				<ImageDescriptionComponent item={item} />
 			</div>
 		);
