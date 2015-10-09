@@ -54,7 +54,7 @@ var BoxComponent = React.createClass({
 
   _getDataFromServer: function(){
     $.ajax({
-      url: "https://api.myjson.com/bins/4bxk6 ",
+      url: this.props.url,
       type: 'GET',
       dataType: 'json',
       success: function(data) {
